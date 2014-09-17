@@ -1,0 +1,12 @@
+This is the changelog for slappy.
+
+
+4.10.2004.v[1.1]
+
+-created modules/ , where the core modules can be found;
+-added $port in the config file for more flexibility;
+-added the oper module, where you can oper the bot if you want;
+
+3.10.2004.v[1.0]
+
+-Initial release of slappy,wasn't not released for the public.

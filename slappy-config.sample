@@ -1,0 +1,53 @@
+<?
+/*
+
+   Slappy - a php ircbot
+    Copyright (C) 2004-2005
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+ */
+
+/* This is the sample slappy config file..in order to 
+get the bot working you must read ALL of it and edit it. */
+
+$bnick = "slappy"; // bot's nick
+$bchans = array('#lan'); // where to join at connect
+$badmins = array('badadmin'); // admins. use 'nick1','nick2','nickN'
+$brealname = "Slappy"; // real name
+$bident = "slap"; // ident
+$ircserver = "127.0.0.1"; // irc server
+$port = "6667"; // the port of the irc server
+$autojoin = "on"; // to join on connect on/off
+$reconnect = "on"; // reconnect on disconnect on/off
+
+//Remove the following line to get the bot working.
+
+die("Bad admin you didn't you config file!\n");
+
+//In order to make the bot work you must uncomment these lines
+//which are the modules.The first two are needed or the won't to
+//thing
+
+ include("modules/api.php"); // provides api for scripting
+ include("modules/raw.php"); // raw messages support
+ include("modules/nickserv.php"); // nickserv support
+ include("modules/oper.php"); // make the bot oper
+ include("modules/pubcmd.php"); // public commands
+
+// One More check to make sure you read all of the config file ;)
+die("Bad admin you didn't you config file!\n");
+
+?>
