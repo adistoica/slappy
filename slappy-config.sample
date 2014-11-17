@@ -23,15 +23,14 @@
 /* This is the sample slappy config file..in order to 
 get the bot working you must read ALL of it and edit it. */
 
-$bnick = "slappy"; // bot's nick
-$bchans = array('#lan'); // where to join at connect
-$badmins = array('badadmin'); // admins. use 'nick1','nick2','nickN'
-$brealname = "Slappy"; // real name
+$bnick = "slappy123123"; // bot's nick
+$bchans = array('#channel'); // where to join at connect
+$badmins = array('adminnick'); // admins. use 'nick1','nick2','nickN'
+$brealname = "Slappy12321"; // real name
 $bident = "slap"; // ident
-$ircserver = "127.0.0.1"; // irc server
-$port = "6667"; // the port of the irc server
+$ircserver = "irc.freenode.net"; // irc server
 $autojoin = "on"; // to join on connect on/off
-$reconnect = "on"; // reconnect on disconnect on/off
+$reconnect = "off"; // reconnect on disconnect on/off
 
 //Remove the following line to get the bot working.
 

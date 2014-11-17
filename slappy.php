@@ -37,7 +37,9 @@ connect($ircserver);
 function connect($ircserver) {
     global $socket,$ircserver,$bnick,$buser,$bchans,$autojoin;
     $socket = socket_create(AF_INET,SOCK_STREAM,SOL_TCP); // create the socket
-    $connection = socket_connect($socket,$ircserver,$port); // connect
+    $connection = socket_connect($socket,$ircserver,6667); // connect
+
+    //var_dump($connection); // THIS IS FOR DEBUG
 
     socket_write($socket,"USER $buser\r\n"); // send the Username
     socket_write($socket,"NICK $bnick\r\n"); // change our nickname
